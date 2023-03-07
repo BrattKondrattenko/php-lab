@@ -1,0 +1,165 @@
+@import url('https://fonts.google.com/share?selection.family=Montserrat:wght@400;700');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+header, footer {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    margin: 25px 0 25px 0;
+}
+
+.header__title {
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: bisque;
+    padding: 20px 0 20px 0;
+}
+.footer__title {
+    font-weight: 400;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+form {
+    padding: 30px;
+    max-width: 40%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.email__label {
+    display: block;
+    text-align: left;
+    padding-left: 5px;
+    transition: all 0.3s;
+    order: 1;
+}
+
+.select__block {
+    display: block;
+    text-align: left;
+    padding-left: 5px;
+    transition: all 0.3s;
+    order: 1;
+}
+
+#input__email {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 7px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    order: 2;
+}
+
+#input__email:focus {
+    border-color: #c1fa6b;
+}
+
+#input__email:focus ~ .email__label,
+.email__label:focus {
+    color: #c1fa6b;
+}
+
+.email__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.var {
+    margin-top: 30px;
+}
+
+.form__checkbox {
+    margin-bottom: 30px;
+}
+.form__checkbox > input {
+    margin-right: 5px;
+}
+.form__checkbox > span {
+    margin-right: 30px;
+}
+.form__checkbox > span:last-child {
+    margin-right: 0px;
+}
+
+.labelSms {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #6f6fff;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #4141ff;
+}
+
+.btn__span {
+    margin-right: 5px;
+}
+
+#output {
+    outline: none;
+    -moz-appearance: none;
+    border: 2px solid #999;
+    border-radius: 1.2rem;
+    resize: none;
+    background: transparent;
+    font-size: 20px;
+}
+
+.next__btn {
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    transition: all .6s ease-in-out;
+    text-decoration: none;
+}
